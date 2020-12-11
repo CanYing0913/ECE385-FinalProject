@@ -1,9 +1,0 @@
-module CM_calculator();
-
-	logic	[18:0]	read_address;
-	logic	[4:0]		curBGIndex;
-
-	
-	BackGroundROM(.*)
-		
-endmodule 
