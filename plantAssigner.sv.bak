@@ -1,0 +1,18 @@
+module moderator(	input		live1,
+						input		live2,
+						input		live3,
+						input 	live4,
+						input		live5,
+						
+						output 	plant1,
+						output	plant2,
+						output	plant3,
+						output	plant4,
+						output	plant5,
+						);
+	
+	logic	[4:0] 	Live;
+	assign Live = {live1, live2, live3, live4, live5};
+
+
+endmodule 

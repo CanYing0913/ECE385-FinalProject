@@ -1,0 +1,8 @@
+module plantAssembler	(	input		logic	[23:0]	RGB_plant1,	RGB_plant2,
+									input		logic				plant_on1,	plant_on2);
+
+
+
+
+
+endmodule 

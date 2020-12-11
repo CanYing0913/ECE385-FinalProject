@@ -1,0 +1,28 @@
+/*
+ * ECE385-HelperTools/PNG-To-Txt
+ * Author: Rishi Thakkar
+ *
+ */
+//	BackGround is 480*640
+module  BackGroundROM
+(
+		input [18:0] read_address,
+		input frame_clk,
+
+		output logic [7:0] curBGIndex
+);
+
+// mem has width of 5 bits and a total of 307200 addresses| 0-16
+logic [4:0] mem [0:307199];
+
+initial
+begin
+	 $readmemh("background.txt", mem, 0, 3200);
+end
+
+
+always_ff @ (posedge frame_clk) begin
+	curBGIndex	<= mem[read_address];
+end
+
+endmodule

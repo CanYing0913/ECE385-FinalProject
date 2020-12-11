@@ -1,0 +1,8 @@
+module testtop	(	input							frame_clk, Reset,
+						input		logic	[7:0]		keycode,
+						output	logic				PlantLive1,
+						output	logic				PlantLive2,
+						output	logic	[9:0]		Pea0X, Pea0Y,
+						output	logic				ZomLive,
+						output	logic	[9:0]		ZomX, ZomY
+					);
