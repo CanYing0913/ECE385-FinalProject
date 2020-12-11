@@ -1,0 +1,233 @@
+module plant_top(	input			logic				MAX10_CLK1_50, Plant,
+						output		logic	[23:0]	RGB_plant, RGB_pea,);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	PlantROM						pltzom	(.*);
+	PlantMapper					pltmap	(.*);
+	plantAssigner				Pltassign(.*);
+	plantAssembler				pltasb	(.*,							.address1(addressplt1),							.address2(addressplt2),
+																				.address3(addressplt3),							.address4(addressplt4),
+																				.address5(addressplt5),							.address6(addressplt6),
+																				.address7(addressplt7),							.address8(addressplt8),
+																				.address9(addressplt9),							.address10(addressplt10),
+																				.address11(addressplt11),						.address12(addressplt12),
+																				.address13(addressplt13),						.address14(addressplt14),
+																				.address15(addressplt15),						.address16(addressplt16),
+																				.address17(addressplt17),						.address18(addressplt18),
+																				.address19(addressplt19),						.address20(addressplt20));
+	peaAssembler				peaasb	(.*);
+	
+	plant 						plt1		(.*,							.Plant(plant1),	.posX(curX),				.posY(curY), 
+												 .plantX(plant1X),		.plantY(plant1Y),	.PlantLive(PlantLive1), .beingEating(beingEating1));
+
+	Plant_calculator			pltc1		(.*,							.plantX(plant1X),	.plantY(plant1Y),			.PlantLive(PlantLive1),
+												 .address(addressplt1),	.plant_on(plant_on1));
+	pea							pea1		(.frame_clk(VGA_VS), 	.startX(plant1X), .startY(plant1Y),			.PlantLive(PlantLive1),
+												 .BallX(Ball1X),			.BallY(Ball1Y));
+	pea_calculator				pc1		(.*,							.BallX(Ball1X),	.BallY(Ball1Y),			.PlantLive(PlantLive1),
+												 .pea_on(pea_on1));
+
+	
+	plant 						plt2		(.*,							.Plant(plant2),	.posX(curX),				.posY(curY), 
+												 .plantX(plant2X),		.plantY(plant2Y),	.PlantLive(PlantLive2), .beingEating(beingEating2));
+	Plant_calculator			pltc2		(.*,							.plantX(plant2X),	.plantY(plant2Y),			.PlantLive(PlantLive2),
+												 .address(addressplt2),	.plant_on(plant_on2));
+	pea							pea2		(.frame_clk(VGA_VS), 	.startX(plant2X), .startY(plant2Y),			.PlantLive(PlantLive2),
+												 .BallX(Ball2X),			.BallY(Ball2Y));
+	pea_calculator				pc2		(.*,							.BallX(Ball2X),	.BallY(Ball2Y),			.PlantLive(PlantLive2),
+												 .pea_on(pea_on2));
+												 
+	plant 						plt3		(.*,							.Plant(plant3),	.posX(curX),				.posY(curY), 
+												 .plantX(plant3X),		.plantY(plant3Y),	.PlantLive(PlantLive3), .beingEating(beingEating3));
+	Plant_calculator			pltc3		(.*,							.plantX(plant3X),	.plantY(plant3Y),			.PlantLive(PlantLive3),
+												 .address(addressplt3),	.plant_on(plant_on3));
+	pea							pea3		(.frame_clk(VGA_VS), 	.startX(plant3X), .startY(plant3Y),			.PlantLive(PlantLive3),
+												 .BallX(Ball3X),			.BallY(Ball3Y));
+	pea_calculator				pc3		(.*,							.BallX(Ball3X),	.BallY(Ball3Y),			.PlantLive(PlantLive3),
+												 .pea_on(pea_on3));
+												 
+	plant 						plt4		(.*,							.Plant(plant4),	.posX(curX),				.posY(curY), 
+												 .plantX(plant4X),		.plantY(plant4Y),	.PlantLive(PlantLive4), .beingEating(beingEating4));
+	Plant_calculator			pltc4		(.*,							.plantX(plant4X),	.plantY(plant4Y),			.PlantLive(PlantLive4),
+												 .address(addressplt4),	.plant_on(plant_on4));
+	pea							pea4		(.frame_clk(VGA_VS), 	.startX(plant4X), .startY(plant4Y),			.PlantLive(PlantLive4),
+												 .BallX(Ball4X),			.BallY(Ball4Y));
+	pea_calculator				pc4		(.*,							.BallX(Ball4X),	.BallY(Ball4Y),			.PlantLive(PlantLive4),
+												 .pea_on(pea_on4));
+												 
+	plant 						plt5		(.*,							.Plant(plant5),	.posX(curX),				.posY(curY), 
+												 .plantX(plant5X),		.plantY(plant5Y),	.PlantLive(PlantLive5), .beingEating(beingEating5));
+	Plant_calculator			pltc5		(.*,							.plantX(plant5X),	.plantY(plant5Y),			.PlantLive(PlantLive5),
+												 .address(addressplt5),	.plant_on(plant_on5));
+	pea							pea5		(.frame_clk(VGA_VS), 	.startX(plant5X), .startY(plant5Y),			.PlantLive(PlantLive5),
+												 .BallX(Ball5X),			.BallY(Ball5Y));
+	pea_calculator				pc5		(.*,							.BallX(Ball5X),	.BallY(Ball5Y),			.PlantLive(PlantLive5),
+												 .pea_on(pea_on5));
+												 
+	plant 						plt6		(.*,							.Plant(plant6),	.posX(curX),				.posY(curY), 
+												 .plantX(plant6X),		.plantY(plant6Y),	.PlantLive(PlantLive6), .beingEating(beingEating6));
+	Plant_calculator			pltc6		(.*,							.plantX(plant6X),	.plantY(plant6Y),			.PlantLive(PlantLive6),
+												 .address(addressplt6),	.plant_on(plant_on6));
+	pea							pea6		(.frame_clk(VGA_VS), 	.startX(plant6X), .startY(plant6Y),			.PlantLive(PlantLive6),
+												 .BallX(Ball6X),			.BallY(Ball6Y));
+	pea_calculator				pc6		(.*,							.BallX(Ball6X),	.BallY(Ball6Y),			.PlantLive(PlantLive6),
+												 .pea_on(pea_on6));
+												 
+	plant 						plt7		(.*,							.Plant(plant7),	.posX(curX),				.posY(curY), 
+												 .plantX(plant7X),		.plantY(plant7Y),	.PlantLive(PlantLive7), .beingEating(beingEating7));
+	Plant_calculator			pltc7		(.*,							.plantX(plant7X),	.plantY(plant7Y),			.PlantLive(PlantLive7),
+												 .address(addressplt7),	.plant_on(plant_on7));
+	pea							pea7		(.frame_clk(VGA_VS), 	.startX(plant7X), .startY(plant7Y),			.PlantLive(PlantLive7),
+												 .BallX(Ball7X),			.BallY(Ball7Y));
+	pea_calculator				pc7		(.*,							.BallX(Ball7X),	.BallY(Ball7Y),			.PlantLive(PlantLive7),
+												 .pea_on(pea_on7));
+												 
+	plant 						plt8		(.*,							.Plant(plant8),	.posX(curX),				.posY(curY), 
+												 .plantX(plant8X),		.plantY(plant8Y),	.PlantLive(PlantLive8), .beingEating(beingEating8));
+	Plant_calculator			pltc8		(.*,							.plantX(plant8X),	.plantY(plant8Y),			.PlantLive(PlantLive8),
+												 .address(addressplt8),	.plant_on(plant_on8));
+	pea							pea8		(.frame_clk(VGA_VS), 	.startX(plant8X), .startY(plant8Y),			.PlantLive(PlantLive8),
+												 .BallX(Ball8X),			.BallY(Ball8Y));
+	pea_calculator				pc8		(.*,							.BallX(Ball8X),	.BallY(Ball8Y),			.PlantLive(PlantLive8),
+												 .pea_on(pea_on8));
+												 
+	plant 						plt9		(.*,							.Plant(plant9),	.posX(curX),				.posY(curY), 
+												 .plantX(plant9X),		.plantY(plant9Y),	.PlantLive(PlantLive9), .beingEating(beingEating9));
+	Plant_calculator			pltc9		(.*,							.plantX(plant9X),	.plantY(plant9Y),			.PlantLive(PlantLive9),
+												 .address(addressplt9),	.plant_on(plant_on9));
+	pea							pea9		(.frame_clk(VGA_VS), 	.startX(plant9X), .startY(plant9Y),			.PlantLive(PlantLive9),
+												 .BallX(Ball9X),			.BallY(Ball9Y));
+	pea_calculator				pc9		(.*,							.BallX(Ball9X),	.BallY(Ball9Y),			.PlantLive(PlantLive9),
+												 .pea_on(pea_on9));
+												 
+	plant 						plt10		(.*,							.Plant(plant10),	.posX(curX),				.posY(curY), 
+												 .plantX(plant10X),		.plantY(plant10Y),.PlantLive(PlantLive10),.beingEating(beingEating10));
+	Plant_calculator			pltc10	(.*,							.plantX(plant10X),.plantY(plant10Y),		.PlantLive(PlantLive10),
+												 .address(addressplt10),.plant_on(plant_on10));
+	pea							pea10		(.frame_clk(VGA_VS), 	.startX(plant10X),.startY(plant10Y),		.PlantLive(PlantLive10),
+												 .BallX(Ball10X),			.BallY(Ball10Y));
+	pea_calculator				pc10		(.*,							.BallX(Ball10X),	.BallY(Ball10Y),			.PlantLive(PlantLive10),
+												 .pea_on(pea_on10));
+												 
+	plant 						plt11		(.*,							.Plant(plant11),	.posX(curX),				.posY(curY), 
+												 .plantX(plant11X),		.plantY(plant11Y),.PlantLive(PlantLive11),.beingEating(beingEating11));
+	Plant_calculator			pltc11	(.*,							.plantX(plant11X),.plantY(plant11Y),		.PlantLive(PlantLive11),
+												 .address(addressplt11),.plant_on(plant_on11));
+	pea							pea11		(.frame_clk(VGA_VS), 	.startX(plant11X),.startY(plant11Y),		.PlantLive(PlantLive11),
+												 .BallX(Ball11X),			.BallY(Ball11Y));
+	pea_calculator				pc11		(.*,							.BallX(Ball11X),	.BallY(Ball11Y),			.PlantLive(PlantLive11),
+												 .pea_on(pea_on11));
+												 
+	plant 						plt12		(.*,							.Plant(plant12),	.posX(curX),				.posY(curY), 
+												 .plantX(plant12X),		.plantY(plant12Y),.PlantLive(PlantLive12),.beingEating(beingEating12));
+	Plant_calculator			pltc12	(.*,							.plantX(plant12X),.plantY(plant12Y),		.PlantLive(PlantLive12),
+												 .address(addressplt12),	.plant_on(plant_on12));
+	pea							pea12		(.frame_clk(VGA_VS), 	.startX(plant12X),.startY(plant12Y),		.PlantLive(PlantLive12),
+												 .BallX(Ball12X),			.BallY(Ball12Y));
+	pea_calculator				pc12		(.*,							.BallX(Ball12X),	.BallY(Ball12Y),			.PlantLive(PlantLive12),
+												 .pea_on(pea_on12));
+												 
+	plant 						plt13		(.*,							.Plant(plant13),	.posX(curX),				.posY(curY), 
+												 .plantX(plant13X),		.plantY(plant13Y),.PlantLive(PlantLive13),.beingEating(beingEating13));
+	Plant_calculator			pltc13	(.*,						.plantX(plant13X),.plantY(plant13Y),		.PlantLive(PlantLive13),
+												 .address(addressplt13),.plant_on(plant_on13));
+	pea							pea13		(.frame_clk(VGA_VS), 	.startX(plant13X),.startY(plant13Y),		.PlantLive(PlantLive13),
+												 .BallX(Ball13X),			.BallY(Ball13Y));
+	pea_calculator				pc13		(.*,							.BallX(Ball13X),	.BallY(Ball13Y),			.PlantLive(PlantLive13),
+												 .pea_on(pea_on13));
+												 
+	plant 						plt14		(.*,							.Plant(plant14),	.posX(curX),				.posY(curY), 
+												 .plantX(plant14X),		.plantY(plant14Y),.PlantLive(PlantLive14),.beingEating(beingEating14));
+	Plant_calculator			pltc14	(.*,							.plantX(plant14X),.plantY(plant14Y),		.PlantLive(PlantLive14),
+												 .address(addressplt14),	.plant_on(plant_on14));
+	pea							pea14 	(.frame_clk(VGA_VS), 	.startX(plant14X),.startY(plant14Y),		.PlantLive(PlantLive14),
+												 .BallX(Ball14X),			.BallY(Ball14Y));
+	pea_calculator				pc14		(.*,							.BallX(Ball14X),	.BallY(Ball14Y),			.PlantLive(PlantLive14),
+												 .pea_on(pea_on14));
+												 
+	plant 						plt15		(.*,							.Plant(plant15),	.posX(curX),				.posY(curY), 
+												 .plantX(plant15X),		.plantY(plant15Y),.PlantLive(PlantLive15),.beingEating(beingEating15));
+	Plant_calculator			pltc15	(.*,							.plantX(plant15X),.plantY(plant15Y),		.PlantLive(PlantLive15),
+												 .address(addressplt15),.plant_on(plant_on15));
+	pea							pea15		(.frame_clk(VGA_VS), 	.startX(plant15X),.startY(plant15Y),		.PlantLive(PlantLive15),
+												 .BallX(Ball15X),			.BallY(Ball15Y));
+	pea_calculator				pc15		(.*,							.BallX(Ball15X),	.BallY(Ball15Y),			.PlantLive(PlantLive15),
+												 .pea_on(pea_on15));
+												 
+	plant 						plt16		(.*,							.Plant(plant16),	.posX(curX),				.posY(curY), 
+												 .plantX(plant16X),		.plantY(plant16Y),.PlantLive(PlantLive16),.beingEating(beingEating16));
+	Plant_calculator			pltc16	(.*,						.plantX(plant16X),	.plantY(plant16Y),		.PlantLive(PlantLive16),
+												 .address(addressplt16),.plant_on(plant_on16));
+	pea							pea16		(.frame_clk(VGA_VS), 	.startX(plant16X),.startY(plant16Y),		.PlantLive(PlantLive16),
+												 .BallX(Ball16X),			.BallY(Ball16Y));
+	pea_calculator				pc16		(.*,							.BallX(Ball16X),	.BallY(Ball16Y),			.PlantLive(PlantLive16),
+												 .pea_on(pea_on16));
+												 
+	plant 						plt17		(.*,							.Plant(plant17),	.posX(curX),				.posY(curY), 
+												 .plantX(plant17X),		.plantY(plant17Y),.PlantLive(PlantLive17),.beingEating(beingEating17));
+	Plant_calculator			pltc17	(.*,							.plantX(plant17X),.plantY(plant17Y),		.PlantLive(PlantLive17),
+												 .address(addressplt17),	.plant_on(plant_on17));
+	pea							pea17		(.frame_clk(VGA_VS), 	.startX(plant17X),.startY(plant17Y),		.PlantLive(PlantLive17),
+												 .BallX(Ball17X),			.BallY(Ball17Y));
+	pea_calculator				pc17		(.*,							.BallX(Ball17X),	.BallY(Ball17Y),			.PlantLive(PlantLive17),
+												 .pea_on(pea_on17));
+												 
+	plant 						plt18		(.*,							.Plant(plant18),	.posX(curX),				.posY(curY), 
+												 .plantX(plant18X),		.plantY(plant18Y),.PlantLive(PlantLive18),.beingEating(beingEating18));
+	Plant_calculator			pltc18	(.*,						.plantX(plant18X),	.plantY(plant18Y),		.PlantLive(PlantLive18),
+												 .address(addressplt18),.plant_on(plant_on18));
+	pea							pea18		(.frame_clk(VGA_VS), 	.startX(plant18X),.startY(plant18Y),		.PlantLive(PlantLive18),
+												 .BallX(Ball18X),			.BallY(Ball18Y));
+	pea_calculator				pc18		(.*,							.BallX(Ball18X),	.BallY(Ball18Y),			.PlantLive(PlantLive18),
+												 .pea_on(pea_on18));
+												 
+	plant 						plt19		(.*,							.Plant(plant19),	.posX(curX),				.posY(curY), 
+												 .plantX(plant19X),		.plantY(plant19Y),.PlantLive(PlantLive19),.beingEating(beingEating19));
+	Plant_calculator			pltc19	(.*,							.plantX(plant19X),.plantY(plant19Y),		.PlantLive(PlantLive19),
+												 .address(addressplt19),.plant_on(plant_on19));
+	pea							pea19		(.frame_clk(VGA_VS), 	.startX(plant19X),.startY(plant19Y),		.PlantLive(PlantLive19),
+												 .BallX(Ball19X),			.BallY(Ball19Y));
+	pea_calculator				pc19		(.*,							.BallX(Ball19X),	.BallY(Ball19Y),			.PlantLive(PlantLive19),
+												 .pea_on(pea_on19));
+												 
+	plant 						plt20		(.*,							.Plant(plant20),	.posX(curX),				.posY(curY), 
+												 .plantX(plant20X),		.plantY(plant20Y),.PlantLive(PlantLive20),.beingEating(beingEating20));
+	Plant_calculator			pltc20	(.*,							.plantX(plant20X),.plantY(plant20Y),		.PlantLive(PlantLive20),
+												 .address(addressplt20),	.plant_on(plant_on20));
+	pea							pea20		(.frame_clk(VGA_VS), 	.startX(plant20X),.startY(plant20Y),		.PlantLive(PlantLive20),
+												 .BallX(Ball20X),			.BallY(Ball20Y));
+	pea_calculator				pc20		(.*,							.BallX(Ball20X),	.BallY(Ball20Y),			.PlantLive(PlantLive20),
+												 .pea_on(pea_on20));
+
+endmodule 

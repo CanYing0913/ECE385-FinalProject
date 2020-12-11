@@ -1,0 +1,571 @@
+
+State Machine - |FinalProject|zom_top:zomtop|state
+Name state.HALT state.pause state.first 
+state.HALT 0 0 0 
+state.first 1 0 1 
+state.pause 1 1 0 
+
+State Machine - |FinalProject|zom_top:zomtop|zomMotion:zomMove10|state
+Name state.EAT state.stop state.move state.initialize 
+state.initialize 0 0 0 0 
+state.move 0 0 1 1 
+state.stop 0 1 0 1 
+state.EAT 1 0 0 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zombie:zomb10|state
+Name state.GetAttack state.Live state.Born state.Dead state.EndAttack 
+state.Dead 0 0 0 0 0 
+state.Born 0 0 1 1 0 
+state.Live 0 1 0 1 0 
+state.GetAttack 1 0 0 1 0 
+state.EndAttack 0 0 0 1 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zomMotion:zomMove9|state
+Name state.EAT state.stop state.move state.initialize 
+state.initialize 0 0 0 0 
+state.move 0 0 1 1 
+state.stop 0 1 0 1 
+state.EAT 1 0 0 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zombie:zomb9|state
+Name state.GetAttack state.Live state.Born state.Dead state.EndAttack 
+state.Dead 0 0 0 0 0 
+state.Born 0 0 1 1 0 
+state.Live 0 1 0 1 0 
+state.GetAttack 1 0 0 1 0 
+state.EndAttack 0 0 0 1 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zomMotion:zomMove8|state
+Name state.EAT state.stop state.move state.initialize 
+state.initialize 0 0 0 0 
+state.move 0 0 1 1 
+state.stop 0 1 0 1 
+state.EAT 1 0 0 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zombie:zomb8|state
+Name state.GetAttack state.Live state.Born state.Dead state.EndAttack 
+state.Dead 0 0 0 0 0 
+state.Born 0 0 1 1 0 
+state.Live 0 1 0 1 0 
+state.GetAttack 1 0 0 1 0 
+state.EndAttack 0 0 0 1 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zomMotion:zomMove7|state
+Name state.EAT state.stop state.move state.initialize 
+state.initialize 0 0 0 0 
+state.move 0 0 1 1 
+state.stop 0 1 0 1 
+state.EAT 1 0 0 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zombie:zomb7|state
+Name state.GetAttack state.Live state.Born state.Dead state.EndAttack 
+state.Dead 0 0 0 0 0 
+state.Born 0 0 1 1 0 
+state.Live 0 1 0 1 0 
+state.GetAttack 1 0 0 1 0 
+state.EndAttack 0 0 0 1 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zomMotion:zomMove6|state
+Name state.EAT state.stop state.move state.initialize 
+state.initialize 0 0 0 0 
+state.move 0 0 1 1 
+state.stop 0 1 0 1 
+state.EAT 1 0 0 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zombie:zomb6|state
+Name state.GetAttack state.Live state.Born state.Dead state.EndAttack 
+state.Dead 0 0 0 0 0 
+state.Born 0 0 1 1 0 
+state.Live 0 1 0 1 0 
+state.GetAttack 1 0 0 1 0 
+state.EndAttack 0 0 0 1 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zomMotion:zomMove5|state
+Name state.EAT state.stop state.move state.initialize 
+state.initialize 0 0 0 0 
+state.move 0 0 1 1 
+state.stop 0 1 0 1 
+state.EAT 1 0 0 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zombie:zomb5|state
+Name state.GetAttack state.Live state.Born state.Dead state.EndAttack 
+state.Dead 0 0 0 0 0 
+state.Born 0 0 1 1 0 
+state.Live 0 1 0 1 0 
+state.GetAttack 1 0 0 1 0 
+state.EndAttack 0 0 0 1 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zomMotion:zomMove4|state
+Name state.EAT state.stop state.move state.initialize 
+state.initialize 0 0 0 0 
+state.move 0 0 1 1 
+state.stop 0 1 0 1 
+state.EAT 1 0 0 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zombie:zomb4|state
+Name state.GetAttack state.Live state.Born state.Dead state.EndAttack 
+state.Dead 0 0 0 0 0 
+state.Born 0 0 1 1 0 
+state.Live 0 1 0 1 0 
+state.GetAttack 1 0 0 1 0 
+state.EndAttack 0 0 0 1 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zomMotion:zomMove3|state
+Name state.EAT state.stop state.move state.initialize 
+state.initialize 0 0 0 0 
+state.move 0 0 1 1 
+state.stop 0 1 0 1 
+state.EAT 1 0 0 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zombie:zomb3|state
+Name state.GetAttack state.Live state.Born state.Dead state.EndAttack 
+state.Dead 0 0 0 0 0 
+state.Born 0 0 1 1 0 
+state.Live 0 1 0 1 0 
+state.GetAttack 1 0 0 1 0 
+state.EndAttack 0 0 0 1 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zomMotion:zomMove2|state
+Name state.EAT state.stop state.move state.initialize 
+state.initialize 0 0 0 0 
+state.move 0 0 1 1 
+state.stop 0 1 0 1 
+state.EAT 1 0 0 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zombie:zomb2|state
+Name state.GetAttack state.Live state.Born state.Dead state.EndAttack 
+state.Dead 0 0 0 0 0 
+state.Born 0 0 1 1 0 
+state.Live 0 1 0 1 0 
+state.GetAttack 1 0 0 1 0 
+state.EndAttack 0 0 0 1 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zomMotion:zomMove1|state
+Name state.EAT state.stop state.move state.initialize 
+state.initialize 0 0 0 0 
+state.move 0 0 1 1 
+state.stop 0 1 0 1 
+state.EAT 1 0 0 1 
+
+State Machine - |FinalProject|zom_top:zomtop|zombie:zomb1|state
+Name state.GetAttack state.Live state.Born state.Dead state.EndAttack 
+state.Dead 0 0 0 0 0 
+state.Born 0 0 1 1 0 
+state.Live 0 1 0 1 0 
+state.GetAttack 1 0 0 1 0 
+state.EndAttack 0 0 0 1 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea20|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt20|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea19|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt19|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea18|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt18|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea17|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt17|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea16|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt16|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea15|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt15|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea14|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt14|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea13|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt13|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea12|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt12|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea11|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt11|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea10|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt10|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea9|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt9|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea8|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt8|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea7|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt7|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea6|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt6|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea5|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt5|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea4|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt4|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea3|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt3|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea2|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt2|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|pea:pea1|state
+Name state.End state.Middle state.Start state.Dead 
+state.Dead 0 0 0 0 
+state.Start 0 0 1 1 
+state.Middle 0 1 0 1 
+state.End 1 0 0 1 
+
+State Machine - |FinalProject|plant_top:plttop|plant:plt1|state
+Name state.Bleed3 state.PAUSE2 state.Bleed2 state.PAUSE1 state.Bleed1 state.Live state.Birth state.Dead 
+state.Dead 0 0 0 0 0 0 0 0 
+state.Birth 0 0 0 0 0 0 1 1 
+state.Live 0 0 0 0 0 1 0 1 
+state.Bleed1 0 0 0 0 1 0 0 1 
+state.PAUSE1 0 0 0 1 0 0 0 1 
+state.Bleed2 0 0 1 0 0 0 0 1 
+state.PAUSE2 0 1 0 0 0 0 0 1 
+state.Bleed3 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|Coordinate:curPosition|state
+Name state.STOP state.E state.D state.A state.S state.W state.HALT state.START 
+state.START 0 0 0 0 0 0 0 0 
+state.HALT 0 0 0 0 0 0 1 1 
+state.W 0 0 0 0 0 1 0 1 
+state.S 0 0 0 0 1 0 0 1 
+state.A 0 0 0 1 0 0 0 1 
+state.D 0 0 1 0 0 0 0 1 
+state.E 0 1 0 0 0 0 0 1 
+state.STOP 1 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|FinalProject_soc:u0|FinalProject_soc_sdram:sdram|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |FinalProject|FinalProject_soc:u0|FinalProject_soc_sdram:sdram|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|FinalProject_soc:u0|FinalProject_soc_sdram:sdram|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |FinalProject|FinalProject_soc:u0|FinalProject_soc_sdram:sdram|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |FinalProject|FinalProject_soc:u0|FinalProject_soc_nios2_gen2_0:nios2_gen2_0|FinalProject_soc_nios2_gen2_0_cpu:cpu|FinalProject_soc_nios2_gen2_0_cpu_nios2_oci:the_FinalProject_soc_nios2_gen2_0_cpu_nios2_oci|FinalProject_soc_nios2_gen2_0_cpu_debug_slave_wrapper:the_FinalProject_soc_nios2_gen2_0_cpu_debug_slave_wrapper|FinalProject_soc_nios2_gen2_0_cpu_debug_slave_tck:the_FinalProject_soc_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

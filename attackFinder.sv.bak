@@ -1,0 +1,13 @@
+module attackFinder(	input		logic	[9:0]	BallX, BallY, ZomCentralX, ZomCentralY,
+							input		logic			hit,
+							inout		logic			attack);
+
+
+
+
+
+
+
+
+
+endmodule 

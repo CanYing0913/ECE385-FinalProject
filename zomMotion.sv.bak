@@ -1,0 +1,26 @@
+module zomMotion( input Reset, frame_clk,
+						input ZomMove,
+						output [9:0]  ZomCentralX, ZomCentralY);
+
+
+	parameter [9:0] Ball_X_Min=1;       // Leftmost point on the X axis
+	parameter [9:0] Ball_X_Max=639;     // Rightmost point on the X axis
+	parameter [9:0] Ball_Y_Min=1;       // Topmost point on the Y axis
+	parameter [9:0] Ball_Y_Max=479;     // Bottommost point on the Y axis
+	parameter [9:0] Ball_X_Step=1;      // Step size on the X axis
+	parameter [9:0] Ball_Y_Step=1;      // Step size on the Y axis
+	
+	always_ff @ (posedge frame_clk)
+	begin
+		if(ZomMove == 1'1)
+		begin
+			
+		end
+		
+		else
+		begin
+		
+		end
+	end
+	
+endmodule 

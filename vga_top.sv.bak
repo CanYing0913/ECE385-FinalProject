@@ -1,0 +1,14 @@
+module vga_top(	input VGA_HS, VGA_VS,
+						input MAX10_CLK1_50,);
+
+	logic	[7:0]		curBGIndex;
+	logic	[18:0]	read_address;
+
+	vga_controller		vgaControl(.*, .pixel_clk(vga_clk_clk), .Reset(Reset_h), .Clk(MAX10_CLK1_50), .hs(VGA_HS), .vs(VGA_VS));
+	
+	color_mapper		cm1(.*);
+	CM_calculator		cmC1(.*, .frame_clk(VGA_VS));
+	BackGroundROM		bgrom1(.read_address(), .frame_clk(VGA_VS));
+	BackGroundMapper	bgm1(.*);
+
+endmodule 
