@@ -1,5 +1,5 @@
 # Project001
-Project 001: simplified plant vs. zombie written in Systemverilog 
+Project 001: simplified plant vs. zombie written in Systemverilog  
 Dec. 12, 2020 as FALL 2020 ECE student @ UIUC, from ECE 385.  
 If you find format distortion in Github review, please cocy the code into Intel Quatus software text editor.  
 In this Project, I managed to do all of the following features:  
